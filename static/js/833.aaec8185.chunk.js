@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwallet_app=self.webpackChunkwallet_app||[]).push([[833],{3833:function(e,a,t){t.r(a),t.d(a,{default:function(){return u.ZP}});var u=t(927)}}]);
