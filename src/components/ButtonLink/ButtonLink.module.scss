@@ -1,0 +1,23 @@
+@import '../../sass/utils/variables';
+@import '../../sass/utils/mixins';
+.link {
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+  padding: 13px 0;
+  font-weight: 400;
+  font-family: 'Circe-Regular';
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: getColor('clr-main');
+
+  background: getColor('clr-white');
+  border: 1px solid getColor('clr-main');
+  border-radius: 20px;
+  @include tablet {
+    min-width: 300px;
+  }
+}

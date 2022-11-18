@@ -1,0 +1,82 @@
+@import '../../sass/utils/variables';
+@import '../../sass/utils/mixins';
+.formField {
+  display: flex;
+  position: relative;
+  margin-bottom: 40px;
+  font-family: 'Circe-Regular';
+  fill: getColor('clr-gray');
+
+  &:focus-within {
+    fill: getColor('clr-main');
+  }
+}
+
+.formInput {
+  width: 100%;
+  padding-left: 60px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+  border-bottom: 1px solid getColor('clr-gray');
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+
+  &::placeholder {
+    color: #bdbdbd;
+  }
+  &:focus {
+    outline: transparent;
+  }
+}
+
+.formIcon {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.errorMessageWrapper {
+  display: flex;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.errorIcon {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  fill: getColor('clr-main');
+  width: 20px;
+  height: 20px;
+}
+
+.errorMessage {
+  padding-left: 50px;
+  color: getColor('clr-main');
+}
+
+.formPasswordField {
+  margin-bottom: 0;
+}
+.buttonWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.IVAN_COMP_PRIMIARY,
+.IVAN_COMP_ACCENT {
+  div {
+  }
+  table {
+  }
+}
+.IVAN_COMP_ACCENT {
+  tr div {
+  }
+  table {
+  }
+}

@@ -1,0 +1,136 @@
+@import '../../sass/utils/variables';
+@import '../../sass/utils/mixins';
+
+.thumb {
+  position: relative;
+  min-width: 280px;
+  height: 187px;
+  font-family: serif;
+  background-color: getColor('clr-main');
+  border-radius: 30px;
+  overflow: hidden;
+  background-image: url(../../assets/images/wave_mobile.svg);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @include tablet {
+    width: 336px;
+    height: 182px;
+    background-image: url(../../assets/images/wave_tablet.svg);
+  }
+  @include desktop {
+    width: 393px;
+    height: 347px;
+    background-image: url(../../assets/images/wave_desktop.svg);
+  }
+}
+.table {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: getColor('clr-white');
+  font-family: 'Circe-Regular';
+}
+.thead {
+  background-color: getColor('clr-accent');
+}
+.th {
+  //   font-family: Circe-Bold;
+  width: calc(100% / 3);
+  padding-top: 11px;
+  padding-bottom: 18px;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+
+  @include desktop {
+    padding-top: 17px;
+    padding-bottom: 16px;
+  }
+}
+.thRow {
+  height: 50px;
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  @include desktop {
+    height: 60px;
+  }
+}
+.th_1,
+.th_2,
+.th_3 {
+  text-align: center;
+  vertical-align: middle;
+}
+.th_1 {
+  @include toDesktop {
+    text-align: left;
+    padding-left: 20px;
+  }
+}
+.th_3 {
+  @include toDesktop {
+    text-align: right;
+    padding-right: 20px;
+  }
+}
+
+.td_1,
+.td_2,
+.td_3 {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+
+  text-align: center;
+  vertical-align: middle;
+
+  padding: 12px 20px;
+}
+.td_1 {
+  @include toDesktop {
+    padding-left: 20px;
+    text-align: left;
+  }
+}
+.td_3 {
+  @include toDesktop {
+    padding-right: 20px;
+    text-align: right;
+  }
+}
+.icon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-size: contain;
+}
+.inputField,
+.resultField,
+.selectField {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  color: getColor('clr-white');
+  background-color: getColor('clr-accent');
+  border-style: none;
+}
+.inputField {
+  padding-left: 4px;
+  line-height: calc(20 / 16);
+  @include toDesktop {
+    border-bottom-left-radius: 10px;
+  }
+}
+.selectField {
+  @include desktop {
+    text-align: center;
+  }
+}
+.resultField {
+  padding-right: 4px;
+  line-height: calc(20 / 16);
+  @include toDesktop {
+    border-bottom-right-radius: 10px;
+  }
+}

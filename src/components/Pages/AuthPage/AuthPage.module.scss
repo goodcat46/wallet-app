@@ -1,0 +1,107 @@
+@import '../../../sass/utils/variables';
+@import '../../../sass/utils/mixins';
+
+.section {
+  min-height: 100vh;
+  background-color: getColor('clr-white');
+  @include tablet {
+    background-image: url(../../../assets/images/tablet-background.png);
+    background-position: center;
+    background-size: cover;
+  }
+  @include desktop {
+    background-image: url(../../../assets/images/desktop-background.png);
+  }
+}
+
+.pageContainer {
+  @include tablet {
+    padding: 60px 0;
+  }
+  @include desktop {
+    padding: 52px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 145px;
+  }
+}
+
+.titleWrapper {
+  @include phone {
+    display: none;
+  }
+  @include tablet {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  @include desktop {
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 0;
+  }
+}
+
+.backgroundImage {
+  width: 260px;
+  height: 250px;
+
+  @include desktop {
+    width: 435px;
+    height: 420px;
+  }
+}
+
+.title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.5;
+  font-family: 'Poppins-Regular';
+}
+
+.formContainer {
+  padding: 107px 0;
+
+  @include tablet {
+    width: 533px;
+    margin: 0 auto;
+    background: getColor('clr-white');
+    border-radius: 20px;
+    padding: 40px 60px 62px 60px;
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+}
+
+.formTitleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 60px;
+  justify-content: center;
+}
+
+.formTitle {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.5;
+  color: getColor('clr-black');
+  font-family: 'Poppins-Bold';
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  @include tablet {
+    width: 40px;
+    height: 40px;
+  }
+}

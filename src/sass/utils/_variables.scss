@@ -1,0 +1,28 @@
+$colors: (
+  'clr-main': #4a56e2,
+  'clr-accent': #6e78e8,
+  'clr-active': #24cca7,
+  'clr-gray': #e0e0e0,
+  'clr-bg1': #f1f2f7,
+  'clr-bg2': #e7eaf2,
+  'clr-bg3': #ffd8d0,
+  'clr-bg4': #c4bbff,
+  'clr-black': #000000,
+  'clr-white': #ffffff,
+  'clr-expense': #ff6596,
+);
+
+@function getColor($color) {
+  @return map-get($colors, $color);
+}
+//color: getColor('clr-main');
+
+$dist16: 9px;
+$dist16: 16px;
+$dist20: 20px;
+$dist32: 32px;
+$dist40: 40px;
+$dist46: 46px;
+$dist69: 69px;
+
+$time-distribution-function: cubic-bezier(0.4, 0, 0.2, 1);

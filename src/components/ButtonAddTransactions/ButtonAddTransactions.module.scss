@@ -1,0 +1,30 @@
+@import '../../sass/utils/mixins';
+
+.button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: #24CCA7;
+    border: none;
+    border-radius: 100%;
+    outline: none;
+    box-shadow: 0px 6px 15px rgba(36, 204, 167, 0.5);
+    cursor: pointer;  
+}
+
+.image {
+    width: 20px;
+    height: 20px;
+}
+
+@include tablet {
+    .button {
+        bottom: 40px;
+        right: 40px;
+    }
+}

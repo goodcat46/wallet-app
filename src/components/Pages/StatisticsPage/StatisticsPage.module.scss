@@ -1,0 +1,98 @@
+@import '../../../sass/utils/variables';
+@import '../../../sass/utils/mixins';
+.Statistics {
+  // max-width: 480px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.statisticsTitle {
+  font-family: 'Poppins-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 1279px) {
+    padding-left: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 8px;
+  }
+}
+
+.chartWrapper {
+  @media screen and (min-width: 1280px) {
+    margin-top: -14px;
+    width: 288px;
+    margin-bottom: 32px;
+    // margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-top: -12px;
+    width: 336px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    padding-top: 11px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.tableWrapper {
+  padding-top: 51px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 8px;
+    max-width: 336px;
+    margin-left: auto;
+  }
+  @media screen and (max-width: 767px) {
+    padding-top: 20px;
+  }
+}
+
+.selectWrapper {
+  height: 115px;
+
+  margin-bottom: 20px;
+}
+
+.noStatisticContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  background-color: getColor('clr-white');
+  padding: 40px;
+  height: 300px;
+  border: transparent;
+  border-radius: 20px;
+  @include phone {
+    padding: 10px;
+    height: 200px;
+  }
+}
+
+.modalOpenSpan {
+  cursor: pointer;
+  color: getColor('clr-main');
+}
+
+.noStatisticMessage {
+  display: block;
+  font-family: 'Poppins-Regular';
+  font-size: 30px;
+  @include phone {
+    font-size: 18px;
+  }
+}

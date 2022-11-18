@@ -1,0 +1,64 @@
+@import '../../../sass/utils/variables';
+@import '../../../sass/utils/mixins';
+@import '../../../stylesheet/fonts.css';
+
+.LogOutConfirm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+
+  padding: 40px;
+  border: transparent;
+  border-radius: 20px;
+  width: 400px;
+  height: 400px;
+
+  background-color: white;
+}
+.exitBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px;
+  min-height: 30px;
+
+  fill: grey;
+
+  border-style: none;
+  background-color: inherit;
+
+  cursor: pointer;
+}
+.userName,
+.exitText,
+.exitBtn {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: grey;
+}
+.exitText {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.userName {
+  border-right: 1px solid grey;
+}
+
+.svg {
+  width: 24px;
+  height: 24px;
+}
+.logoutMessage {
+  font-family: 'Circe-Regular';
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.buttonWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

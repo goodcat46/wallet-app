@@ -1,0 +1,40 @@
+.table {
+  position: relative;
+  font-size: 12px;
+
+  font-family: 'Poppins-Bold';
+}
+.trHead {
+  display: grid;
+  grid-template-columns:
+    calc(100% * 16 / 100) calc(100% * 10 / 100) calc(100% * 18 / 100)
+    calc(100% * 28 / 100) calc(100% * 12 / 100) calc(100% * 16 / 100);
+
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  height: 50px;
+
+  overflow: hidden;
+  border-radius: 30px;
+
+  background-color: #fff;
+}
+.tBody {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 52px;
+
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.07em;
+
+  width: 100%;
+  min-height: 100px;
+  max-height: 650px;
+}
+
+
+
+
+

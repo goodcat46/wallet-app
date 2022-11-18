@@ -1,0 +1,107 @@
+@import '../../sass/utils/variables';
+@import '../../sass/utils/mixins';
+
+.table {
+  width: 704px;
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: center;
+  font-family: 'Circe-Regular';
+  font-style: normal;
+  color: #000000;
+
+  @media screen and (min-width: 1280px) {
+    width: 715px;
+  }
+}
+
+.thead {
+  height: 58px;
+  border: none;
+  overflow: hidden;
+}
+
+.colHead {
+  background-color: getColor('clr-white');
+  padding: 16px 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+
+  &:first-child {
+    border-radius: 29px 0 0 29px;
+  }
+
+  &:last-child {
+    border-radius: 0 29px 29px 0;
+  }
+}
+
+.tbody {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.tbodyRow:not(:last-child) {
+  border-bottom: 1px solid #dcdcdf;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
+}
+
+.col {
+  height: 52px;
+  vertical-align: middle;
+  padding: 8px 20px;
+}
+
+.col-1 {
+  width: 10%;
+  text-align: left;
+}
+
+.col-2 {
+  width: calc(715px * 16 / 100);
+}
+
+.col-3 {
+  max-width: calc(715px * 18 / 100);
+  text-align: left;
+}
+
+.col-4 {
+  width: calc(715px * 28 / 100);
+  height: 52px;
+  text-align: left;
+}
+
+.comentWrap {
+  width: 180px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.col-5 {
+  width: calc(715px * 12 / 100);
+  text-align: right;
+}
+
+.col-6 {
+  width: calc(715px * 16 / 100);
+  text-align: right;
+}
+
+.income {
+  color: getColor('clr-active');
+}
+
+.expense {
+  color: getColor('clr-expense');
+}

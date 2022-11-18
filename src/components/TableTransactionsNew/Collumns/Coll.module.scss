@@ -1,0 +1,40 @@
+.col {
+  display: flex;
+  align-items: center;
+
+  padding: 4px;
+  height: 100%;
+}
+.commentWrap {
+  width: 100%;
+  text-align: start;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.date {
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+.type {
+  justify-content: center;
+}
+.category {
+  justify-content: flex-start;
+  text-align: start;
+}
+.comment {
+  justify-content: flex-start;
+  text-align: center;
+}
+.sum {
+  justify-content: flex-end;
+}
+.balance {
+  justify-content: flex-end;
+  padding-right: 20px;
+}

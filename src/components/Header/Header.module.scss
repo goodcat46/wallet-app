@@ -1,0 +1,72 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  width: 100%;
+  min-height: 60px;
+
+  background-color: #fff;
+  @media screen and (min-width: 480px) {
+    min-height: 80px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logoBox {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  @media screen and (min-width: 480px) {
+    gap: 20px;
+  }
+}
+.logoImgBox {
+  width: 30px;
+  height: 30px;
+  @media screen and (min-width: 480px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+.logoText {
+  width: 121px;
+  height: 40px;
+  left: 92px;
+  top: 20px;
+
+  font-family: 'Poppins-Bold';
+  color: black;
+
+  font-size: 30px;
+  line-height: 45px;
+  display: flex;
+  align-items: center;
+}
+.nameBox {
+  display: flex;
+  align-items: center;
+}
+.userName {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px;
+  min-height: 30px;
+
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: grey;
+
+  border-right: 1px solid grey;
+}

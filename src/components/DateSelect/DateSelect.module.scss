@@ -1,0 +1,133 @@
+@import '../../sass/utils/variables';
+@import '../../sass/utils/mixins';
+
+.selectWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+
+  @include tablet {
+    flex-direction: row;
+    gap: 32px;
+  }
+  @include desktop {
+    gap: 16px;
+  }
+}
+.select {
+  position: relative;
+
+  width: 181px;
+  font-size: 18px;
+  line-height: 1.5;
+  min-width: 280px;
+  width: 100%;
+  background: getColor('clr-white');
+  border: 1px solid getColor('clr-black');
+  border-radius: 30px;
+  cursor: pointer;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include tablet {
+    min-width: 150px;
+  }
+  @include desktop {
+    min-width: 181px;
+  }
+}
+.selectHeader {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+
+  font-family: 'Circe-Regular';
+  font-weight: 400;
+  font-size: 16px;
+
+  line-height: 1.5;
+  color: getColor('clr-black');
+  white-space: nowrap;
+
+  @include tablet {
+    padding-left: 16px;
+  }
+}
+
+.selectHeader.isChosen {
+  color: #ff6596;
+}
+
+.selectIcon {
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  fill: #000000;
+  transform: translateY(-50%);
+
+  transition-property: fill, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .select:focus > & {
+    fill: #ff6596;
+    transform: rotate(180deg) translateY(50%);
+  }
+}
+
+.selectBody {
+  display: none;
+  overflow: auto;
+  position: absolute;
+  top: 54px;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  min-width: 181px;
+  max-height: 300px;
+  border-radius: 20px;
+
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  background-color: getColor('clr-white');
+
+  .select:focus > & {
+    left: -1;
+  }
+  @include tablet {
+    min-width: 160px;
+  }
+  @include desktop {
+    min-width: 181px;
+  }
+}
+
+.selectBody.isActive {
+  display: block;
+}
+
+.selectItem {
+  cursor: pointer;
+  padding: 9px 20px;
+  font-family: 'Circe-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #ff6596;
+    outline: none;
+  }
+}
+
+.hiddenInput {
+  display: none;
+}
